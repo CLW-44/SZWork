@@ -1,0 +1,246 @@
+/*设置头部文本样式*/
+div#head-text {text-align:center;display:block;}
+div#head-text h1 {font-size:70px;margin-bottom:40px;line-height:70px}
+
+/*设置背景样式*/
+div#bg{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	min-width: 1000px;
+	/* 设置于最低端，形成背景图片 */
+	z-index:-10;
+	zoom: 1;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center 0;	  
+	/*为chrome和opera浏览器作兼容*/
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+
+html, body {
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+}
+body {
+    line-height: 1.42857143;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.head-one{
+	padding:0em 0 2em;
+}
+.head-one h2{
+	font-weight:800;
+	font-size:1.8em;
+	text-transform:uppercase;
+	margin:0.2em 0;
+}
+.head-one span{
+	height:3px;
+	background:#303030;
+	display:inline-block;
+	width:20%;
+	margin:0;
+	padding:0;
+}
+.head-one p{
+	margin: 0.4em auto;
+	font-size: 1em;
+	letter-spacing: 0.015em;
+	width: 61%;
+	line-height: 1.5em;
+}
+
+/*---team---*/
+.team{
+	background: #F3F3F3;
+	padding: 4em 0 22em;
+	border: 1px solid #DBDBDB;
+	border-right: 0;
+	border-left: 0;
+}
+.team-head p{
+	width: 59%;
+	font-weight: 600;
+	color: #5A5A5A;
+	margin: 1.2em auto;
+}
+.team-member{
+	background:#FFFFFF;
+	padding:1em;
+	box-shadow: 0px 1px 2px #999;
+	-webkit-box-shadow: 0px 1px 2px #999;
+	-moz-box-shadow: 0px 1px 2px #999;
+	-o-box-shadow: 0px 1px 2px #999;
+	-ms-box-shadow: 0px 1px 2px #999;
+}
+.team-text{
+	Margin:25px;
+	background:#FFFFFF;
+	padding:2em;
+	box-shadow: 0px 1px 2px #999;
+	-webkit-box-shadow: 0px 1px 2px #999;
+	-moz-box-shadow: 0px 1px 2px #999;
+	-o-box-shadow: 0px 1px 2px #999;
+	-ms-box-shadow: 0px 1px 2px #999;
+}
+.team-text p{
+	display: block;
+	font-weight:bold;
+	font-size:1.2em;
+	Margin:20px;
+	background:#FFFFFF;
+	padding:1.2em;
+	box-shadow: 0px 1px 2px #999;
+	-webkit-box-shadow: 0px 1px 2px #999;
+	-moz-box-shadow: 0px 1px 2px #999;
+	-o-box-shadow: 0px 1px 2px #999;
+	-ms-box-shadow: 0px 1px 2px #999;
+}
+.team-text h1,h2{
+	text-align: center;
+}
+.team-text h4{
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: -1.1em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
+    font-weight: bold;
+	
+}
+
+/*圆形头像框*/
+img.t-pic{
+	/*border-radius属性向元素添加圆角*/
+	border-radius: 30em;
+	-webkit-border-radius: 30em;
+	-moz-border-radius: 30em;
+	-o-border-radius: 30em;
+	-ms-border-radius: 30em;
+	border: 3px solid #FFF;
+	box-shadow: 0px 5px 4px #999;
+	-webkit-box-shadow: 0px 5px 4px #999;
+	-moz-box-shadow: 0px 5px 4px #999;
+	-o-box-shadow: 0px 5px 4px #999;
+	-ms-box-shadow: 0px 5px 4px #999;
+	
+}
+/*居中*/
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-font-ul{	
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+.newHtml {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.team-member h3{
+	text-transform: uppercase;
+	font-weight: 800;
+	font-size: 1em;
+	margin: 1em 0 0.3em;
+	color:#303030;
+	
+}
+.team-member span{
+	font-style:italic;
+	color:#303030;
+}
+@media (min-width: 992px) {
+  .box{
+    float: left;
+  }
+	.box {
+		width: 25%;
+		position: relative;
+		min-height: 1px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+}
+
+
+/*----test----*/
+.test{
+	padding:3em 0;
+}
+/*----page----*/
+.page{
+	padding:1.5em;
+	opacity:0.7;
+}
+.page-last{
+	float:left;
+}
+.page-next{
+	float:right;
+}
+.button { /* 按钮美化 */
+	width: 270px; /* 宽度 */
+	height: 40px; /* 高度 */
+	border-width: 0px; /* 边框宽度 */
+	border-radius: 3px; /* 边框半径 */
+	background: #1E90FF; /* 背景颜色 */
+	cursor: pointer; /* 鼠标移入按钮范围时出现手势 */
+	outline: none; /* 不显示轮廓线 */
+	font-family: Microsoft YaHei; /* 设置字体 */
+	color: white; /* 字体颜色 */
+	font-size: 17px; /* 字体大小 */
+}
+.button:hover { /* 鼠标移入按钮范围时改变颜色 */
+	background: #5599FF;
+}
+
+
+/*----footer----*/
+.footer{
+	
+	padding:1.5em 1em;
+	opacity:0.7;
+}
+.footer p{
+	margin:0;
+	padding:0;
+	color:#000000;
+	font-size:1em;
+}
+.footer-left{
+	float:left;
+}
+.footer-right{
+	float:right;
+	border-right: 50px;
+}
+#toTop {
+	display: none;
+	text-decoration: none;
+	position: fixed;
+	bottom: 14px;
+	right: 3%;
+	overflow: hidden;
+	width: 40px;
+	height: 40px;
+	border: none;
+	text-indent: 100%;
+	background: url("../img/to-top.png") no-repeat 0px 0px;
+}
